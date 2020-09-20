@@ -1,0 +1,5 @@
+**/*.md
+**/*.svg
+**/*.html
+**/*.json
+node_modules

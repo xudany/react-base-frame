@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.scss';
 import Test from './component/test';
@@ -9,6 +10,17 @@ function App() {
       <header className="App-header">
         <Test label="111111" />
         <img src={logo} className="App-logo" alt="logo" />
+        <Router>
+          <ul>
+            <li>
+              <Link to="/">home</Link>
+            </li>
+            <li>
+              <Link to="/test">test</Link>
+            </li>
+          </ul>
+          <Route path="/test" component={Test} />
+        </Router>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>

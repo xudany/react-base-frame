@@ -86,6 +86,6 @@ module.exports = {
     'react/require-default-props': 0,
     camelcase: 0,
 
-    // 'react-hooks/exhaustive-deps': 1,
+    'react-hooks/exhaustive-deps': 1,
   },
 };

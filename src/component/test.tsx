@@ -6,9 +6,8 @@ type Props = {
 
 const Test = ({ label }: Props) => {
   useEffect(() => {
-    const b;
     const a = 0;
-    if (a == 0) {
+    if (a === 0) {
       console.log(11111);
     }
   }, []);

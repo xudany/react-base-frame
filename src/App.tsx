@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import Test from './component/test'
+import Test from './component/test';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Test label={'111111'}></Test>
+        <Test label="111111" />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.

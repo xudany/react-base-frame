@@ -1,8 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.scss';
-import Test from './component/test';
+import Test from './components/test';
+import renderRouter from './router/renderRouter';
+import routes from './router/routerConfig';
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
               <Link to="/test">test</Link>
             </li>
           </ul>
-          <Route path="/test" component={Test} />
+          {/* <Route path="/test" component={Test}/> */}
+
+          {renderRouter(routes, {})}
         </Router>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.

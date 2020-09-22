@@ -18,11 +18,13 @@ function App() {
               <Link to="/">home</Link>
             </li>
             <li>
-              <Link to="/test">test</Link>
+              <Link to="/infrastructure">infrastructure</Link>
+            </li>
+            <li>
+              <Link to="/infrastructure/purification">/purification</Link>
+              <Link to="/waterFactory/123">/purification/123</Link>
             </li>
           </ul>
-          {/* <Route path="/test" component={Test}/> */}
-
           {renderRouter(routes, {})}
         </Router>
         <p>

@@ -19,7 +19,7 @@ export interface PropsIRoute {
   hideChildrenInMenu?: boolean;
 }
 
-export interface RouteWithProps {
+export interface PropsRouteWith {
   path: string;
   exact?: boolean;
   strict?: boolean;

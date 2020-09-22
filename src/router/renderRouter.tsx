@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import { PropsIRoute, RouteWithProps } from './routerInterface';
+import { PropsIRoute, PropsRouteWith } from './routerInterface';
 
-const RouteWithProps = ({ path, exact, strict, render, location }: RouteWithProps) => {
+const RouteWithProps = ({ path, exact, strict, render, location }: PropsRouteWith) => {
   return (
     <Route
       path={path}

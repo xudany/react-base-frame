@@ -4,6 +4,7 @@ import './App.scss';
 import $request from './api/index';
 import renderRouter from './router/renderRouter';
 import routes from './router/routerConfig';
+import config from './config';
 import logo from './logo.svg';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
   useEffect(() => {
     const a = getData();
     console.log('hahahaha', a);
+    console.log('config', config);
   }, []);
 
   return (
